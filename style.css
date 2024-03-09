@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+html {
+    max-height: 100%;
+}
+
+html, body {
+    overflow-x: hidden;  
+}
+
+.wrapper {
+    background-color: ;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    width: 100vw;
+    height: fit-content;
+ 
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100vw;
+}
