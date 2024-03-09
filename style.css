@@ -55,12 +55,12 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* ширина контейнера */
-    margin-top: 20px; /* отступ между группами партнеров */
+    width: 80%; 
+    margin-top: 20px;
   }
   
   .partner {
-    flex-basis: calc(20% - 20px); /* 5 равных колонок с отступами между ними */
+    flex-basis: calc(20% - 20px); 
   }
   
   .partner img {
@@ -73,15 +73,29 @@ html, body {
   @media screen and (max-width: 768px) {
     .top-partners,
     .bottom-partners {
-      flex-wrap: wrap; /* перенос на новую строку при малом разрешении экрана */
-      justify-content: center; /* выравнивание по центру при переносе */
+      flex-wrap: wrap; 
+      justify-content: center; 
     }
-  
+}
     .partner {
-      flex-basis: calc(50% - 20px); /* При адаптивном разрешении отображаем 2 колонки в строке */
-    }
+      flex-basis: calc(50% - 20px); 
   }
   
+  .partner-btn {
+    background-color: #F1A293;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .partner-btn:hover {
+    background-color: #128788;
+  }
+  
+
 /*Футер*/
 .footer {
     background-image: linear-gradient(to bottom, #128788, #0E5C63);
