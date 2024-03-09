@@ -132,13 +132,23 @@ html, body {
   
   .footer-section.apps a {
     display: inline-block; 
-    margin: 0 10px; 
+    margin: 0 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .footer-section.apps a:hover {
+    transform: translateX(5px);
   }
 
   .socials a {
     margin: 0 5px;
+    transition: transform 0.3s ease;
   }
   
+  .socials a:hover img {
+    transform: scale(1.1);
+  }
+
   .links ul {
     list-style: none;
     padding: 0;
