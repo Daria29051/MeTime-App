@@ -39,3 +39,39 @@ html, body {
     grid-area: footer;
     width: 100vw;
 }
+
+
+/*Партнеры*/
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-partners,
+  .bottom-partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .partner {
+    flex-basis: calc(20% - 20px); /* 5 равных колонок с отступами между ними */
+  }
+  
+  .partner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Медиа-запрос для адаптивности */
+  @media screen and (max-width: 768px) {
+    .partner {
+      flex-basis: calc(50% - 20px); /* При адаптивном разрешении отображаем 2 колонки в строке */
+    }
+  }
+  
