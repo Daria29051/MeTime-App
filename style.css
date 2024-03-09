@@ -118,15 +118,25 @@ html, body {
     margin-bottom: 10px;
   }
   
-  .socials a {
-    color: #fff;
-    font-size: 20px;
-    margin-right: 10px;
-    transition: color 0.3s ease;
+  .socials {
+    margin-top: 10px;
+    margin-bottom: -30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   
-  .socials a:hover {
-    color: #007bff;
+  .footer-section.apps {
+    text-align: center; 
+  }
+  
+  .footer-section.apps a {
+    display: inline-block; 
+    margin: 0 10px; 
+  }
+
+  .socials a {
+    margin: 0 5px;
   }
   
   .links ul {
@@ -167,7 +177,7 @@ html, body {
   }
   
   .btn:hover {
-    background-color: rgb(43, 245, 150)
+    background-color: rgb(10, 10, 10)
   }
   
   .btn-big {
