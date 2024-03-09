@@ -39,3 +39,356 @@ html, body {
     grid-area: footer;
     width: 100vw;
 }
+
+
+/* header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #555547;
+    background-color: white;
+}
+
+.logogroup {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin: 0;
+    padding-right: 5px;
+    width: 50px;
+}
+
+#appname {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #0E5C63;
+    justify-self: flex-start;
+}
+
+#topnav {
+    display: flex;
+} 
+
+.list-item {
+    padding-right: 40px;
+    list-style-type: none;
+}
+.list {
+    display: flex;
+}
+.list a {
+    text-decoration: none;
+    color: #555547;
+}
+
+#club {
+    width: 110px;
+    margin: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #009090;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #009090;
+    border-radius: 15px;
+    align-self: center;
+}
+
+#club:hover {
+    cursor: pointer;
+}
+
+#club:active {
+    box-shadow: 0px 5px 5px 0px #63cbcb;
+}
+
+/* screen1 */
+
+.screen1 {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f0;
+}
+
+.screen1 h1 {
+    font-family: 'Philosopher', serif;
+    color: #0E5C63;
+}
+
+.screen1 p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    color: #555547;
+}
+
+#test {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    color: white;
+    border: 2px solid #f1a293;
+    border-radius: 9999px;
+    background: #f1a293;
+}
+
+#test:hover {
+    cursor: pointer;
+}
+
+#test:active {
+    box-shadow: 0px 15px 25px 0px #ffbaac;
+}
+
+.article {
+    width: 40vw;
+    padding-left: 30px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#momphoto {
+    flex-shrink: 0;
+}
+
+
+
+/* Choice-screen */
+.choice-screen {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    
+}
+ 
+.choice-screen-part {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.choice-screen-header {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: #0E5C63;
+}
+
+.choice-screen-text {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #0E5C63;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+
+/*Партнеры*/
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-partners,
+  .bottom-partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    margin-top: 20px;
+  }
+  
+  .partner {
+    flex-basis: calc(20% - 20px);
+    border: 2px solid #f5f5f5;
+    border-radius: 5px; 
+    padding: 3rem; 
+    margin: 15px; 
+    box-sizing: border-box; 
+    width: calc(20% - 10px); 
+    display: inline-block; 
+    vertical-align: top; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .partner a:hover img {
+    transform: scale(1.2); /* Увеличиваем изображение в 1.1 раза при наведении */
+  }
+
+  .partner img {
+    width: 100%; 
+    height: auto; 
+}
+
+.become-partner {
+margin-top: 25px;
+}
+
+/* Медиа-запрос для маленьких экранов */
+@media screen and (max-width: 768px) {
+    .partner {
+      flex: 0 0 calc(33.333% - 20px); /* Уменьшаем размер партнеров */
+}
+}
+  
+  .partner-btn {
+    background-color: #F1A293;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .partner-btn:hover {
+    background-color: #128788;
+  }
+  
+
+/*Футер*/
+.footer {
+    background-image: linear-gradient(to bottom, #128788, #0E5C63);
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    flex-basis: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+  }
+  
+  .contact a {
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .contact a:hover {
+    color: rgba(14, 92, 99, 1);
+  }
+
+  .socials {
+    margin-top: 10px;
+    margin-bottom: -30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .footer-section.apps {
+    text-align: center; 
+  }
+  
+  .footer-section.apps a {
+    display: inline-block; 
+    margin: 0 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .footer-section.apps a:hover {
+    transform: translateX(5px);
+  }
+
+  .socials a {
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .socials a:hover img {
+    transform: scale(1.1);
+  }
+
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .links ul li a:hover {
+    color: rgba(14, 92, 99, 1);
+  }
+  
+  .contact-form .text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .btn {
+    background-color: rgba(14, 92, 99, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgb(10, 10, 10)
+  }
+  
+  .btn-big {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  
+  .footer-bottom {
+    background-color: rgba(14, 92, 99, 1);
+    color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+  }

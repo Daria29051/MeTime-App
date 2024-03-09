@@ -3,26 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MeTime</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="header"> Header</div>
-        <div class="main">
-            <div class="screen1">
+        <header class="header">
+            <div class="logogroup">
+            <img id="logo" src="assets/img/logo.png" alt="logo">
+            <p id="appname">MeTime</p>
+            </div>
+            <nav id="topnav">
+                <ul class="list">
+                    <li class="list-item"><a href="#screen1">Главная</a></li>
+                    <li class="list-item"><a href="#choice-screen">Советы</a></li>
+                    <li class="list-item"><a href="#partners">Партнеры</a></li>
+                    <li class="list-item"><button id="club">Клуб мам</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div id="screen1" class="screen1">
               <article class="article">
                 <h1>Даже чудо-женщинам бывает нужно расслабиться и подзарядиться</h1>
                 <p>MeTime - приложение для помощи мамам. Для детей ты супергероиня, но одной из твоих сверхспособностей точно должна стать забота о себе. Выбери способ отдыха сама или воспользуйся нашим тестом. А если нужны советы и сопереживание - вступай в наш Клуб мам.</p>
                 <button id="test">Пройти тест</button>
               </article>
-              <img id="momphoto" src="assets/images/happy-mother-child.jpg" alt="momphoto">
+              <img id="momphoto" src="assets/img/happy-mother-child.jpg" alt="momphoto">
             </div>
-            <div class="choice-screen"></div>
-            <div class="partners"></div>
-        </div>
-            <div class="footer"> Footer</div>
+            <div id="choice-screen"class="choice-screen">
+                <div class="choice-screen-part">
+                  <img src="assets/img/reading.jpg" alt="reading-woman" />
+                </div>
+                <div class="choice-screen-part">
+                  <p class="choice-screen-header">Выбери занятие себе по душе</p>
+                  <p><a  class="choice-screen-text" href="rest-cards.html">Спокойный отдых &#9658&#9658&#9658</a></p>
+                  <p ><a class="choice-screen-text" href="rest-cards.html">&#9668&#9668&#9668 Активный отдых</a></p>
+                </div>
+        
+                <div class="choice-screen-part">
+                  <img src="assets/img/fitness.jpg" alt="sport-woman" />
+                </div>
+            </div>
+
+             <!-- Секция партнеры -->
+        <section id='partners'class="partners">
+            <div class="top-partners">
+              <div class="partner">
+                <a href="https://fitstars.ru/">
+                  <img src="assets/fitstars.svg" alt="Партнер 1" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://www.mariakardakova.com/">
+                  <img src="assets/marys.png" alt="Партнер 2" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://www.detmir.ru/">
+                  <img src="assets/detmir.svg" alt="Партнер 3" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://www.korablik.ru/">
+                  <img src="assets/korablic.svg" alt="Партнер 4" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://familydoctor.ru/">
+                  <img src="assets/doc.svg" alt="Партнер 5" />
+                </a>
+              </div>
+            </div>
+            <div class="bottom-partners">
+              <div class="partner">
+                <a href="https://skoromama.ru/">
+                  <img src="assets/skoromama.svg" alt="Партнер 6" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://www.centr-rebenka.ru/">
+                  <img src="assets/centrreb.png" alt="Партнер 7" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://mamadeti.ru/">
+                  <img src="assets/motherandchild.svg" alt="Партнер 8" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://www.huggies.ru/">
+                  <img src="assets/huggies_logo_svg.svg" alt="Партнер 9" />
+                </a>
+              </div>
+              <div class="partner">
+                <a href="https://malinari.ru/">
+                  <img src="assets/milinary.png" alt="Партнер 10" />
+                </a>
+              </div>
+            </div>
+            <div class="become-partner">
+              <button class="partner-btn">Стать нашим партнером</button>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-section about">
+                <h2>О нас</h2>
+                <p>
+                  Наша команда стремится создавать инновационные решения и улучшать
+                  мир вокруг нас &hearts;.
+                </p>
+                <div class="contact">
+                  <a href="tel:+7 (XXX)XXX-XX-XX">+7 (XXX) XXX-XX-XX</a>
+                  <a href="mailto:example@example.com">example@example.com</a>
+                </div>
+              </div>
+              <div class="footer-section links">
+                <h2>Ссылки</h2>
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Советы</a></li>
+                  <li><a href="#">Партнеры</a></li>
+                  <li><a href="#">Клуб мам</a></li>
+                </ul>
+              </div>
+              <div class="footer-section apps">
+                <h2>Скачайте себе:</h2>
+                <a href="#"><img src="assets/googleplay-f.svg" alt="google" /></a>
+                <a href="#"><img src="assets/appstore-f.svg" alt="appstore" /></a>
+              </div>
+              <div class="footer-section contact-form">
+                <h2>Подпишись на нашу рассылку</h2>
+                <form action="#" method="post">
+                  <input
+                    type="email"
+                    name="email"
+                    class="text-input contact-input"
+                    placeholder="Введите ваш email..."
+                  />
+                  <button type="submit" class="btn btn-big">Отправить</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              &copy; Сделано для мамочек, с любовью &hearts; Дарья, Евгения,
+              Джессика.
+            </div>
+            <div class="socials">
+              <a href="#"><img src="assets/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="assets/pinterest.png" alt="Pinterest" /></a>
+              <a href="#"><img src="assets/youtube.png" alt="YouTube" /></a>
+            </div>
+          </footer>
        
     </div>
 

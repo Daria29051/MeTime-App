@@ -1,0 +1,73 @@
+.wrapper {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-family: 'Philosopher', serif;
+    color: #0E5C63;
+    font-weight: 600;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.option {
+    font-family: "Source Sans 3", sans-serif;
+    padding: 5px;
+    border: 1px solid #0E5C63;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.option-img{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+.option-image {
+    max-height: 250px;
+}
+
+.option-text {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    background-color: hsl(10, 77%, 76%, 0.3);
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.option-title {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #0E5C63;
+}
+
+.option-button {
+   background-color: rgb(13, 92, 99, 0.5);
+   color: white ;
+   width: 170px;
+   height: 30px;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   margin-left: 30px;
+}
+
+.option-para {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #0E5C63;
+}
