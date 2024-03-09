@@ -24,11 +24,119 @@ html, body {
     "footer footer footer";
 }
 
+/* header */
 .header {
     grid-area: header;
     width: 100vw;
-    height: fit-content;
- 
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #555547;
+}
+
+.logogroup {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin: 0;
+    padding-right: 5px;
+    width: 50px;
+}
+
+#appname {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #0E5C63;
+    justify-self: flex-start;
+}
+
+#topnav {
+    display: flex;
+} 
+
+.list-item {
+    padding-right: 40px;
+    list-style-type: none;
+}
+.list {
+    display: flex;
+}
+.list a {
+    text-decoration: none;
+    color: #212832;
+}
+
+#club {
+    width: 110px;
+    margin: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #009090;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #009090;
+    border-radius: 15px;
+    align-self: center;
+}
+
+/* screen1 */
+
+.screen1 {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f0;
+}
+
+.screen1 h1 {
+    font-family: 'Philosopher', serif;
+    color: #0E5C63;
+}
+
+.screen1 p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    color: #555547;
+}
+
+#test {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    color: white;
+    border: 2px solid #f1a293;
+    border-radius: 9999px;
+    background: #f1a293;
+}
+
+#test:hover {
+    cursor: pointer;
+}
+
+#test:active {
+    box-shadow: 0px 15px 25px 0px #ffbaac;
+}
+
+.article {
+    width: 40vw;
+    padding-left: 30px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#momphoto {
+    flex-shrink: 0;
 }
 
 .main {
