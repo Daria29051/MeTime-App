@@ -46,7 +46,7 @@ html, body {
 .partners {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   
@@ -55,7 +55,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%; /* ширина контейнера */
+    margin-top: 20px; /* отступ между группами партнеров */
   }
   
   .partner {
@@ -70,6 +71,12 @@ html, body {
   
   /* Медиа-запрос для адаптивности */
   @media screen and (max-width: 768px) {
+    .top-partners,
+    .bottom-partners {
+      flex-wrap: wrap; /* перенос на новую строку при малом разрешении экрана */
+      justify-content: center; /* выравнивание по центру при переносе */
+    }
+  
     .partner {
       flex-basis: calc(50% - 20px); /* При адаптивном разрешении отображаем 2 колонки в строке */
     }
