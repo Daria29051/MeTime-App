@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MeTime</title>
 </head>
 <body>
     <div class="wrapper">
@@ -15,15 +21,15 @@
             </div>
             <nav id="topnav">
               <ul class="list">
-                <li class="list-item">Главная</li>
-                <li class="list-item">Советы</li>
-                <li class="list-item">Партнеры</li>
+                <li class="list-item"><a href="#screen1">Главная</a></li>
+                <li class="list-item"><a href="#choice-screen">Советы</a></li>
+                <li class="list-item"><a href="#partners">Партнеры</a></li>
                 <li class="list-item"><button id="club">Клуб мам</button></li>
               </ul>
            </nav>
         </div>
         <div class="main">
-            <div class="screen1">
+            <div class="screen1" id="screen1">
               <article class="article">
                  <h1>Даже чудо-женщинам бывает нужно расслабиться и подзарядиться</h1>
                  <p>MeTime - приложение для помощи мамам. Для детей ты супергероиня, но одной из твоих сверхспособностей точно должна стать забота о себе. Выбери способ отдыха сама или воспользуйся нашим тестом. А если нужны советы и сопереживание - вступай в наш Клуб мам.</p>
@@ -31,8 +37,8 @@
               </article>
               <img id="momphoto" src="assets/images/happy-mother-child.jpg" alt="momphoto">
             </div>
-            <div class="choice-screen"></div>
-            <div class="partners"></div>
+            <div class="choice-screen" id="choice-screen"></div>
+            <div class="partners" id="partners"></div>
         </div>
             <div class="footer"> Footer</div>
        
